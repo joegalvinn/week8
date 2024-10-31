@@ -1,5 +1,10 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Posts - Next.js page",
+  description: "A simple site built with Next.js",
+};
+
 export default async function PostListPage({ searchParams }) {
   console.log("searchParams", searchParams);
   const response = await fetch("https://jsonplaceholder.typicode.com/posts");

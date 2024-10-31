@@ -9,14 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-popover": "1.1.2",
+    "framer-motion": "^11.11.9",
+    "next": "14.2.15",
+    "pg": "^8.13.0",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.15"
+    "react-popover": "0.5.10"
   },
   "devDependencies": {
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
     "eslint": "^8",
-    "eslint-config-next": "14.2.15"
+    "eslint-config-next": "14.2.15",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
   }
 }

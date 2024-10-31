@@ -1,3 +1,12 @@
+export async function generateMetadata({ params }) {
+  const result = await fetch(`https://dummyjson.com/products/${params.id}`);
+  const data = await result.json();
+  return {
+    title: `Item - ${data.title}`,
+    description: `${data.description}`,
+  };
+}
+
 export default async function PostPage({ params }) {
   const response = await fetch(
     `https://jsonplaceholder.typicode.com/posts/${params.id}`
